@@ -19,6 +19,7 @@ export default function Main() {
         dispatch(setUser(newUser))
         socket.emit("username", newUser)
         dispatch(socketListeners(socket))
+        // eslint-disable-next-line
     }, [])
 
     
